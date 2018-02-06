@@ -1,0 +1,32 @@
+apply plugin: 'eclipse'
+apply plugin: 'java'
+
+sourceCompatibility = '1.8'
+targetCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+sourceSets {
+    main {
+        java {
+            srcDir 'src'
+        }
+        resources {
+            srcDir 'src'
+        }
+    }
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+}
+
+jar {
+    archiveName = 'PetiteMM.jar'
+    manifest {
+        attributes 'Implementation-Title': 'PetiteMM', 'Implementation-Version': 1.0
+        attributes 'Main-Class': 'PetiteMM'
+    }
+}
