@@ -1,5 +1,6 @@
 PetiteMM
 ========
+[![Travis Build Status](https://travis-ci.org/loveemu/petitemm.svg?branch=master)](https://travis-ci.org/loveemu/petitemm)
 
 PetiteMM is a SMF (MIDI) to MML converter.
 
